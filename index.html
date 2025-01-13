@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronith Valluri - Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 50px 20px;
+            position: relative;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        header a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1em;
+            text-transform: uppercase;
+            transition: background 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background: #4CAF50;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        /* Container for Sections */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        /* Section Styling */
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        ul li a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        ul li a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        /* Resume Section Styling */
+        #resume {
+            background: none;
+            text-align: center;
+        }
+
+        /* Resume Button Styling */
+        .resume-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .resume-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+            position: relative;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media only screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 12px 20px;
+                text-align: center;
+            }
+            .container {
+                width: 90%;
+            }
+            section {
+                margin-bottom: 20px;
+                padding: 15px;
+            }
+            footer {
+                font-size: 0.9em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            section h2 {
+                font-size: 1.2em;
+            }
+            ul li {
+                font-size: 0.9em;
+            }
+            .resume-btn {
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Ronith Valluri">
+        <h1>Ronith Valluri</h1>
+        <p>Contact: 6302366610 | <a href="mailto:ronithvalluri11@gmail.com">ronithvalluri11@gmail.com</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/ronithvalluri/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/ronithvalluri" target="_blank">GitHub</a> | 
+            <a href="https://leetcode.com/u/ronith_valluri/" target="_blank">LeetCode</a>
+        </p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#responsibilities">Responsibilities</a>
+        <a href="#certifications">Certifications</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Passionate Computer Science Engineering student with a strong foundation in programming, web development, 
+                and data science. Seeking a challenging position to leverage my skills and contribute to the success of the 
+                team and organization.
+            </p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Vellore Institute of Technology</strong>, Vellore, India - B.Tech Computer Engineering (2021 - Present) | CGPA: 9.31</li>
+                <li><strong>Sri Shiridi Sai Junior College</strong>, Rajahmundry, India - Intermediate | Score: 94.4%</li>
+                <li><strong>The Future Kids School</strong>, Rajahmundry, India - 10th ICSE | Score: 89%</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>HR Management Portal</strong> | <a href="https://careers-jobportal.vercel.app/" target="_blank">Link</a><br>Technologies: MERN Stack<br>Streamlines recruitment processes with user-friendly features.</li>
+                <li><strong>E-Commerce Website</strong> | <a href="https://ronithvalluri.github.io/furniture_project/" target="_blank">Link</a><br>Technologies: HTML, CSS, Bootstrap<br>Professional furniture showcase with a responsive design.</li>
+                <li><strong>Diabetes Prediction System</strong> | <a href="https://github.com/ronithvalluri/diabetes_prediction" target="_blank">GitHub</a><br>Technologies: Python, SVM<br>Predicts diabetes presence using machine learning techniques.</li>
+            </ul>
+        </section>
+        <section id="responsibilities">
+            <h2>Positions of Responsibility</h2>
+            <ul>
+                <li><strong>Skit & Documentation Head</strong> | Sahiti-TLA VIT, Vellore (Mar 2024 – Present)</li>
+                <li><strong>Volunteer (Core)</strong> | Riviera VIT, Vellore (Feb 2023)</li>
+                <li><strong>Co-ordinator (Publicity and Management)</strong> | Riviera VIT, Vellore (Feb 2024)</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: Java, Python, C/C++, SQL, JavaScript, HTML/CSS</li>
+                <li>Frameworks: React, Bootstrap</li>
+                <li>Libraries: pandas, NumPy, Matplotlib, scikit-learn</li>
+                <li>Developer Tools: VS Code, Visual Studio, Eclipse</li>
+            </ul>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>AWS Certified Cloud Practitioner</strong> (<a href="https://drive.google.com/file/d/1LWTn-v7dUQGZmHGN0dxdGH9AisDsD6Fx/view?usp=sharing" target="_blank">View Certification</a>) (2023 - 2026)</li>
+                <li><strong>Web Development Bootcamp</strong> | Udemy (<a href="https://drive.google.com/file/d/1aNDU-zAbfXw1aiGuppaxMa2YUFHlOLrL/view?usp=sharing" target="_blank">View Certification</a>) (2023)</li>
+                <li><strong>MERN Full Stack</strong> | Ethnus (<a href="https://drive.google.com/file/d/1nU30ZVFsAPDTMmy-Q2bcsAAgh0ltqAKb/view?usp=sharing" target="_blank">View Certification</a>) (2023)</li>
+            </ul>
+        </section>
+        <section id="resume">
+            <a href="https://drive.google.com/file/d/1dIWDGMkhwL9OlkNU-Faoeq9Mm8guQMBN/view?usp=sharing" target="_blank" class="resume-btn">Open Resume</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Ronith Valluri | <a href="mailto:ronithvalluri11@gmail.com">Contact</a></p>
+    </footer>
+</body>
+</html>
